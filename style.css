@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #64a7ea;
+    background-image: url(https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    object-fit: contain;
+    justify-content: center;
+    min-height: 100vh;
+    background-position: center;
+}
+.container {
+    max-width: 600px;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+.select-container, .input-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.select-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    font-size: 1em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%27http%3A//www.w3.org/2000/svg%27 width%3D%2714%27 height%3D%2714%27 viewBox%3D%270 0 14 14%27 fill%3D%27%23000%27%3E%3Cpath d%3D%27M4.646 4.646a.5.5 0 0 1 .708 0L7 6.293l1.646-1.647a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 0-.708z%27/%3E%3C/svg%3E') no-repeat right 10px center;
+    background-size: 30px 30px;
+}
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none;
+ }
+.input-container input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    font-size: 1em;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.input-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+.input-container button:hover {
+    background-color: #0056b3;
+}
+.info-container {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.info-container h3 {
+    margin-bottom: 10px;
+}
+.info-container p {
+    margin: 5px 0;
+}
+.info-container hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+#publicHolidays{
+    overflow-y: auto;
+    max-height: 400px;
+}

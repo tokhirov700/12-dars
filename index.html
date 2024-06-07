@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝒞𝑜𝓊𝓃𝓉𝓇𝓎 ℐ𝓃𝒻𝑜𝓇𝓂𝒶𝓉𝒾𝑜𝓃 𝒶𝓃𝒹 ℋ𝑜𝓁𝒾𝒹𝒶𝓎𝓈 🌏</title>
+    <link rel="shortcut icon" href="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Mamlakat ma'lumotlari va bayramlar 🌏</h1>
+        <div class="select-container">
+            <label for="countryCode">
+                Mamlakat kodini tanlang:</label>
+            <select id="countryCode" onchange="getCountryInfo()">
+                <option value="" disabled selected>Mamlakatni tanlang</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <input type="number" id="yearInput" placeholder="Enter Year" />
+            <button onclick="toggleInfoContainer()">Orqaga</button>
+            <button onclick="getPublicHolidays()">Davlat bayramlarini oling</button>
+        </div>
+        <div id="countryInfo" class="info-container"></div>
+        <div id="publicHolidays" class="info-container"></div>
+    </div>
+
+
+    <script src="script/app.js"></script>
+</body>
+</html>
+
+
